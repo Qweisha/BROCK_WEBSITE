@@ -1,0 +1,68 @@
+<div class="header">
+    
+    <div class="slider">
+        <img src="./assets/slider.jpg" alt="slider">
+    </div>
+    <div class="small-imgs">
+        <img src="./assets/banner1.jpg" >
+        <img src="./assets/banner2.jpg" >
+        <img src="./assets/banner2.jpg" >
+    </div>
+
+    <div class="featured">
+        <div class="fa-img">
+            <img src="./assets/banner4.jpg" alt="">
+            <a href="#">STREETWEAR</a>
+        </div>
+        <div class="fa-img">
+            <img src="./assets/banner5.jpg" alt="">
+            <a href="#">OUTERWEAR</a>
+        </div>
+        <div class="fa-img">
+            <img src="./assets/banner6.jpg" alt="">
+            <a href="#">SUMMER</a>
+        </div>
+        <div class="fa-img">
+            <img src="./assets/banner7.jpg" alt="">
+            <a href="#">SALE</a>
+        </div>
+    </div>
+
+    <div class="products-container">
+
+        <div class="product-header">
+            <h4>Featured products</h4>
+
+        </div>
+        <div class="product" *ngFor="let item of products">
+           <div class="img" > 
+               <img src="{{item.srcImg}}" alt="">
+                <div class="view">
+                         <button mat-button (click)="openDialog(item.id,item.name ,item.price ,item.srcImg )">Quick View</button>
+                </div>
+                
+            </div>
+            <a href="#">{{item.name}}</a>
+
+            <div class="rate">
+           
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+                <span>({{item.rates}})</span>
+              </div>
+              <span class="price">{{item.price | currency}}</span>
+              <p class="stock-title">In Stock</p>
+              <button id="ADDbtn" (click)="AddToCart()" >ADD TO CART</button>
+
+        </div>
+    </div>
+</div>
+

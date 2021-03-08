@@ -1,0 +1,15 @@
+<div  class="dialog" mat-dialog-content>
+    <div class="img"><img src="{{data.srcImg}}" alt=""></div>
+    <div class="info">
+        <h3 mat-dialog-title>{{data.name}}</h3>
+        <h6>Your Price: {{data.price| currency}}</h6>
+        <p>Availability: In Stock.
+        </p>
+        <div class="addToCart">
+            <input value="1" type="number">
+            <button>ADD TO CART</button>
+          
+        </div>
+        <a href="#">MORE DETALIS</a>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+button {
+    display: block;
+    background-color: #222222;
+    color: #fff;
+    padding: 5px 35px;
+    border: 1px solid;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+ button:hover {
+    opacity: 0.8;
+}
+
+
+.gift {
+    margin:  20px;
+
+}
+.gift  .links a{
+    color: #7d7c7c;
+    margin-right: 15px;
+    
+    
+}
+.gift .links a.home::after {
+    content: '';
+    border-right: 2px solid #7d7c7c;
+    padding: 0 5px;
+   
+}
+.gift .content {
+    margin-top: 20px;
+}
+
+.gift .content h4{
+    margin-bottom: 15px;
+}
+.gift .content h6{
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #7d7c7c;
+}
+.G-search{
+    margin-top: 50px;
+    width: 600px;
+}
+.G-search .reg-name{
+    width: 85%;
+}
+
+.G-search .fname ,.G-search .lname{
+    width: 40%;
+}
+.G-search .lname {
+    margin-left: 5%;
+}

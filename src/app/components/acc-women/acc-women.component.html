@@ -1,0 +1,43 @@
+<div class="acc-women">
+    <div class="links">
+       <a href="#" class="demt">Home</a>
+       <a href="#"  class="demt">Accessories</a>
+       <a href="#" class="active">Men</a>
+    </div>
+    <div class="content">
+        <h4>WOMEN</h4>
+
+        <div class="product" *ngFor="let item of products">
+           
+            <div class="img" > 
+                <img src="{{item.srcImg}}" alt="">
+                 <div class="view">
+                          <button mat-button (click)="openDialog(item.id,item.name ,item.price ,item.srcImg )">Quick View</button>
+                 </div>
+                 
+             </div>
+             <a href="#">{{item.name}}</a>
+ 
+             <div class="rate">
+            
+                 <input type="radio" id="star5" name="rate" value="5" />
+                 <label for="star5" title="text">5 stars</label>
+                 <input type="radio" id="star4" name="rate" value="4" />
+                 <label for="star4" title="text">4 stars</label>
+                 <input type="radio" id="star3" name="rate" value="3" />
+                 <label for="star3" title="text">3 stars</label>
+                 <input type="radio" id="star2" name="rate" value="2" />
+                 <label for="star2" title="text">2 stars</label>
+                 <input type="radio" id="star1" name="rate" value="1" />
+                 <label for="star1" title="text">1 star</label>
+                 <span>({{item.rates}})</span>
+               </div>
+               <span class="price">{{item.price | currency}}</span>
+               <p class="stock-title">In Stock</p>
+               <button id="ADDbtn" (click)="AddToCart()" >ADD TO CART</button>
+ 
+         </div>
+        
+        
+    </div>
+</div>

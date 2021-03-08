@@ -1,0 +1,28 @@
+.about {
+    padding:  20px ;
+}
+.about .links a{
+    color: #7d7c7c;
+    margin-right: 15px;
+    
+    
+}
+.about .links a.home::after {
+    content: '';
+    border-right: 2px solid #7d7c7c;
+    padding: 0 5px;
+   
+}
+.about  .content{
+    margin-top: 20px;
+
+}
+.about  .content h4{
+    border-bottom: 1px solid #7d7c7c;
+}
+
+.about .content div{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}

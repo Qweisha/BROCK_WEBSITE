@@ -1,0 +1,45 @@
+<div class="my-account">
+    <div class="links">
+        <a href="#" class="home">Home</a>
+        <a href="#">MY ACCOUNT</a>
+    </div>
+    <h4>MY ACCOUNT</h4>
+    <div class="content">
+
+
+        <div class="new-custmoer">
+            <h6>NEW CUSTOMERS</h6>
+            <p>
+                If you don't have an account, please proceed by clicking the following button to continue first-time
+                registration.
+            </p>
+            <button>CREAT ACCOUNT</button>
+        </div>
+        <div class="registry">
+            <h6>RETURNING CUSTOMERS</h6>
+            <p>
+                Please log in to your account.
+            </p>
+
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Enter your Email ">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password " [type]="hide ? 'password' : 'text'">
+                    <a class="text-decoration-none" mat-icon-button matSuffix (click)="hide = !hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </a>
+                </mat-form-field>
+                <button>LOGIN TO MY ACCOUNT</button>
+                <button>RESET MY PASSWORD</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>

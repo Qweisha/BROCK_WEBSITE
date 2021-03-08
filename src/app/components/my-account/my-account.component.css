@@ -1,0 +1,67 @@
+button {
+    display: block;
+    background-color: #222222;
+    color: #fff;
+    padding: 5px 35px;
+    border: 1px solid;
+
+    letter-spacing: 1.5px;
+    width: 300px;
+    text-align: center;
+    display: inline-block; 
+    margin-top: 15px;
+
+}
+ button:hover {
+    opacity: 0.8;
+}
+
+.my-account {
+    margin:  20px;
+
+}
+.my-account  .links a{
+    color: #222222;
+    margin-right: 15px;
+    
+    
+}
+.my-account .links a.home::after {
+    content: '';
+    border-right: 2px solid #c0c0c0;
+    padding: 0 5px;
+   
+}
+
+ .my-account h4{
+    margin: 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #c0c0c0;
+}
+ .my-account h6{
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.content > div{
+    width: 50%;
+    padding: 30px;
+}
+.registry *{
+
+    display: block;
+}
+.new-custmoer {
+    text-align: right;
+    border-right: 1px solid #c0c0c0 ;
+}
+
+.new-custmoer p {
+    width: 400px;
+    margin-left: auto
+}

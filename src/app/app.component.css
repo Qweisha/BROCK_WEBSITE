@@ -1,0 +1,145 @@
+#navbar{
+    display: inline-block;
+    margin-left: 15px;
+
+}
+.img{
+    margin-top: 100px;
+    text-align: center;
+}
+.img a:hover{
+   opacity: 0.7;
+}
+.left-icons {
+
+    float: right;
+
+}
+.category {
+    padding: 0 15px;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+.category h2 {
+ 
+    padding-bottom:15px;
+}
+
+.menu{
+    padding: 15px 0;
+    margin:0 ;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.menu ul {
+    padding: 0;
+}
+.menu ul li {
+    width: 100%;
+    text-align: center;
+   
+
+}
+
+.menu ul li a:hover{
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+.menu ul li a{
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #222226;
+    letter-spacing: 0.025em;
+    min-height: 48px;
+ 
+}
+.links ul {
+    padding-left: 35%;
+}
+.links li {
+
+    float: left;
+   
+    margin-left: 8px;
+
+
+}
+.links li a {
+    color: #000 ;
+    font-size: 25px;
+}
+.links li a:hover {
+    color: rgb(108, 101, 101) ;
+
+}
+#accessories::after {
+    content: '+';
+    position: relative;
+    left: 80px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.dropdown {
+    display: none;
+
+}
+.drop-menu .dropdown  {
+    transition: all  linear 3s;
+    transform: translateY(-2em);
+    visibility: hidden;
+    opacity: 0;
+
+}
+  .drop-menu:hover  .dropdown {
+    display:block;
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+}
+.icons ul {
+    padding: 0 40px;
+
+}
+.icons li{
+    float: left;
+    margin-left:25px ;
+    letter-spacing: 1.1px;
+}
+.icons li a{
+   
+    color: #222226;
+    
+}
+
+.btn-1{
+    position: absolute;
+    line-height: 53px;
+    
+
+ }
+.mat-drawer-container{
+    background: none;
+    height: 100%;
+ 
+}
+.mat-drawer-content{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.mat-drawer{
+    width:375px;
+    height: 100%;
+
+    
+} 
+.loader-container {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    margin: auto auto;
+}

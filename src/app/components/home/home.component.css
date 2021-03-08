@@ -1,0 +1,185 @@
+.header {
+    padding: 20px;
+}
+
+.slider img{
+    width: 100%;
+    cursor: pointer;
+}
+.slider:hover {
+    opacity: 0.8;
+}
+.small-imgs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start
+}
+.small-imgs img{
+
+   cursor: pointer;
+    margin: 15px 25px 15px 0 ;
+  
+}
+.featured {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+.featured .fa-img{
+    margin-bottom: 15px;
+    width: 48%;
+
+}
+.featured .fa-img img{
+    width: 100%;
+    cursor: pointer;
+ 
+}
+.featured .fa-img a{
+    display: inherit;
+    text-align: center;
+    color: #222222;
+    font-size: 33px;
+    padding: 20px 0;
+    letter-spacing: 10px;
+}
+/*products*/
+.product {
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 80px;
+    animation-delay: 1s;
+    animation-duration: 2s; 
+    animation-fill-mode: both; 
+    animation-name: bounceInUp; 
+}
+.products-container .product-header {
+    border-bottom: 1px solid #333;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.product img{
+    cursor: pointer;
+}
+
+.product .img:hover .view{
+    display: block;
+}
+.product .img{
+    position: relative;
+}
+.product .view {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 120px;
+    height: 36px;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 45%);
+    line-height: 2;
+    cursor: pointer;
+    display:none ; 
+    opacity:1;
+    color: #333;
+    background-color: #fff;
+   
+
+}
+.product .view:hover{
+    opacity:0.7;
+}
+.product a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #222222;
+}
+.product .stock-title {
+    display: inline-block;
+    width: 100%;
+    color: #d1d1d1;
+}
+.product .price {
+    display: block;
+    font-weight: 600;
+}
+.product input {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.product #ADDbtn {
+    background: none;
+    padding: 0px 30px;
+    border: 1px solid #222222;
+    transition: all linear 0.5s;
+    font-weight: 600;
+}
+.product #ADDbtn:hover{
+     background-color: #222222;
+    color: #fff;
+}
+@keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        transform: translateY(-30px); 
+    } 
+    80% { 
+        transform: translateY(10px); 
+    } 
+    100% { 
+        transform: translateY(0); 
+    } 
+} 
+/*rating */
+
+.rate {
+    text-align: center;
+    display: inline-table;
+    height: 30px;
+    padding: 0 10px;
+}
+.rate label{
+margin:0
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:22px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
